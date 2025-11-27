@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap');
+
+.portfolio {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+}
+
 :root {
   --main-color: #a020f0; /* Default purple */
   --glow-color: 0 0 20px #a020f0, 0 0 40px #c040ff;
@@ -449,5 +456,8 @@ html {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+
+
 
 

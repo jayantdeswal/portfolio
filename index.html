@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jayant Chaudhary | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lastport.css">
 </head>
 <body>
   <!-- INTRO VIDEO SECTION -->
@@ -42,7 +42,7 @@
     <header id="home">
       <div class="profile">
         <div class="glow"></div>
-        <img src="myimage.jpeg" alt="Jayant Chaudhary">
+        <img src="/linkedinimage.jpeg" alt="Jayant Chaudhary">
       </div>
       <h1>Jayant Chaudhary</h1><br>
       <p class="tagline">Time will tell everything — and code will define it.</p>
@@ -77,7 +77,7 @@
         <span class="skill">Data Structures</span>
         <span class="skill">Python</span>
         <span class="skill">Patent Writing</span>
-        <span class="skill">HTML/CSS</span>
+        <span class="skill">HTML/CSS/Java Script</span>
       </div>
     </section>
 
@@ -113,7 +113,7 @@
   <h2 class="section-title">Contact</h2>
   <p>Connect via 
     <a href="https://www.linkedin.com/in/jayant-chaudhary-808226380/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B5%2Bdf2owES76rpvzCyueMbw%3D%3D" target="_blank">LinkedIn</a> • 
-    <a href="#" target="_blank">GitHub</a> • 
+    <a href="https://github.com/jayantdeswal" target="_blank">GitHub</a> • 
     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jayantchaudhary@gmail.com" target="_blank">Email</a>
   </p>
 
@@ -182,7 +182,7 @@
 
   <!-- LIVE TYPING SCRIPT -->
   <script>
-    const skills = ["Java", "Data Structures", "Web Development", "Python", "Patent Writing"];
+    const skills = ["Web Development","Java", "Data Structures", "Python", "Patent Writing"];
     const typingEl = document.getElementById("typing-skill");
     let skillIndex = 0;
     let charIndex = 0;
@@ -211,6 +211,18 @@
     typeEffect();
   </script>
 
+<script>
+  // Show portfolio after intro fades out
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelector('.portfolio').style.opacity = '1';
+      document.querySelector('.portfolio').style.pointerEvents = 'auto';
+    }, 3500); // matches your intro fade timing (3s)
+  });
+</script>
+
 </body>
 </html>
+
+
 
